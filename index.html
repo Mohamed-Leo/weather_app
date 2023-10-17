@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="icon" href="static/images/webicon.png">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- main css file -->
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <body>
+        <!-- Start container -->
+            <div class="container">
+                <!-- Start search-box -->
+                <div class="search-box">
+                    <!-- Start search-align -->
+                    <div class="search-align">
+                        <!-- Start search-input -->
+                        <div class="search-input">
+                            <input id="city" type="text" placeholder="city name">
+                        </div>
+                        <!-- End search-input -->
+
+                        <!-- Start search-icon -->
+                        <label for="city" class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <!-- End search-icon -->
+                    </div>
+                    <!-- End search-align -->
+
+                    <!-- Start location -->
+                    <button id="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        current location
+                    </button>
+                    <!-- End location -->
+                </div>
+                <!-- End search-box -->
+
+                <h3 class="error"></h3>
+
+                <!-- Start weather -->
+                <div class="weather">
+                    <!-- Start img -->
+                    <img id="weather_img" src="static/images/clear.svg" alt="weather-icon">
+                    <!-- End img -->
+
+                    <!-- Start weather-info -->
+                    <div class="weather-info">
+                        <h1>23°C</h1>
+                        <p>Gaza</p>
+                    </div>
+                    <!-- End weather-info -->
+                </div>
+                <!-- End weather -->
+
+                <!-- Start details -->
+                <div class="details">
+                    <!-- Start humidity -->
+                    <div class="humidity">
+                        <!-- Start img -->
+                        <img src="static/images/humidity.svg" alt="humidity-icon">
+                        <!-- End img -->
+
+                        <!-- Start humidity-info -->
+                        <div class="humidity-info">
+                            <h3>64%</h3>
+                            <h4>humidity</h4>
+                        </div>
+                        <!-- End humidity-info -->
+                    </div>
+                    <!-- End humidity -->
+
+                    <!-- Start humidity -->
+                    <div class="wind">
+                        <!-- Start img -->
+                        <img src="static/images/wind2.svg" alt="wind-icon">
+                        <!-- End img -->
+
+                        <!-- Start humidity-info -->
+                        <div class="wind-info">
+                            <h3>10.0km/h</h3>
+                            <h4>wind speed</h4>
+                        </div>
+                        <!-- End humidity-info -->
+                    </div>
+                    <!-- End humidity -->
+                </div>
+                <!-- End details -->
+
+                <!-- Start weather-video -->
+                <video autoplay muted loop>
+                    <source id="video_weather" src="//cdn-cf-east.streamable.com/video/mp4/mq9rtq.mp4?Expires=1697757660&Signature=c6DkKHV0FaTzaCIjjAqGmpJ4Mgq3yozLhCwQmwRWCZlYv45M7QmfjzH-lY4Yek2Q1jc~RS~KhoPWLBBrQY9nItVGnnYJ5Cv3P-w0AN6Yi~mRyt1bMIoMWGkcjji-xB6hKsOD4sLBFpkc1TBGMa4DNJJ-nDqVu9n5KCdIgFRlq8L8a22RS5nk3sxXegbXRZi-MvNHnLuVMy9pV3vM4cKytbKZaSwr4mSlx3SyiKUerJHr9KYLcY3EZz9wS43DNOaTlSc9Prd0ftuy37fkkPr~UXLrhTmxGS4UugBJGBIaBSx4IpsymXwtHwDRrvG4bl3yegrRxPip4KGlvxyFYFP-FA__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ" type="video/mp4">
+                </video>
+                <!-- End weather-video -->
+            </div>
+        <!-- End container -->
+
+
+
+        <!-- loader -->
+        <div class="loading">
+            <span class="loader"></span>
+        </div>
+
+
+
+        <script src="static/js/jquery-3.7.1.min.js"></script>
+        <script src="static/js/index.js"></script>
+    </body>
+</html>
